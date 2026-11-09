@@ -8,6 +8,7 @@
 [![Status](https://img.shields.io/pypi/status/solometrics)](https://pypi.org/project/solometrics/)
 [![Downloads](https://static.pepy.tech/badge/solometrics)](https://pepy.tech/project/solometrics)
 [![Downloads/month](https://img.shields.io/pypi/dm/solometrics)](https://pypistats.org/packages/solometrics)
+[![License](https://img.shields.io/github/license/itbanque/solometrics-python)](LICENSE)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
@@ -269,3 +270,7 @@ python scripts/gen_async.py   # after editing src/solometrics/_resources.py
 2. Tag and push: `git tag v0.1.1 && git push origin v0.1.1`.
 
 The **Release** workflow runs CI, checks the tag matches `_version.py`, builds the sdist and wheel, publishes to PyPI (trusted publishing, no token), and creates a GitHub release with the built files.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).

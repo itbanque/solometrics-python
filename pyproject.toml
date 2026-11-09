@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling>=1.24"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
@@ -8,6 +8,8 @@ dynamic = ["version"]
 description = "Python SDK for the SneakersRadar API: retail inventory, StockX/GOAT market data, and StockX listings, costs and orders."
 readme = "README.md"
 requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
 authors = [{ name = "Itbanque" }]
 keywords = ["sneakers", "stockx", "goat", "sneakersradar", "api", "sdk"]
 classifiers = [
