@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "solometrics"
+dynamic = ["version"]
+description = "Python SDK for the SneakersRadar API: retail inventory, StockX/GOAT market data, and StockX listings, costs and orders."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Itbanque" }]
+keywords = ["sneakers", "stockx", "goat", "sneakersradar", "api", "sdk"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.24,<1",
+    "typing_extensions>=4.5; python_version < '3.11'",
+]
+
+[project.urls]
+Documentation = "https://www.sneakers.itbanque.com/docs"
+Homepage = "https://www.sneakers.itbanque.com"
+
+[dependency-groups]
+dev = ["pytest>=8", "pytest-asyncio>=0.23", "mypy>=1.10", "ruff>=0.5"]
+
+[tool.hatch.version]
+path = "src/solometrics/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/solometrics"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.lint]
+# Keep typing.Optional/List/Dict: the SDK supports 3.9, where get_type_hints()
+# cannot evaluate PEP 604/585 strings. UP028: async generation needs explicit loops.
+ignore = ["UP006", "UP007", "UP035", "UP045", "UP028", "PYI034"]
+
+[tool.mypy]
+strict = false
+files = ["src/solometrics"]
