@@ -1,5 +1,18 @@
 # solometrics — SneakersRadar API Python SDK
 
+[![CI](https://github.com/itbanque/solometrics-python/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/itbanque/solometrics-python/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/solometrics)](https://pypi.org/project/solometrics/)
+[![GitHub release](https://img.shields.io/github/v/release/itbanque/solometrics-python)](https://github.com/itbanque/solometrics-python/releases)
+[![Python](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://pypi.org/project/solometrics/)
+[![Wheel](https://img.shields.io/pypi/wheel/solometrics)](https://pypi.org/project/solometrics/#files)
+[![Status](https://img.shields.io/pypi/status/solometrics)](https://pypi.org/project/solometrics/)
+[![Downloads](https://static.pepy.tech/badge/solometrics)](https://pepy.tech/project/solometrics)
+[![Downloads/month](https://img.shields.io/pypi/dm/solometrics)](https://pypistats.org/packages/solometrics)
+[![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![API docs](https://img.shields.io/badge/API-docs-35CC91)](https://www.sneakers.itbanque.com/docs)
+
 Python client for the [SneakersRadar API](https://www.sneakers.itbanque.com/docs): retailer inventory and SKU history, StockX / GOAT market quotes, and StockX listings, costs and orders.
 
 - Sync `Client` and async `AsyncClient` with identical methods
