@@ -115,6 +115,20 @@ Methods whose StockX endpoint accepts `connection_id` take it as a keyword argum
 
 ## Examples
 
+Complete, runnable scripts live in [`examples/`](examples/): StockX vs GOAT price comparison, retail-to-StockX arbitrage scan, auto-repricer with a cost floor, bulk CSV listing with progress, sales report with CSV export, and retail restock timelines. [`examples/README.md`](examples/README.md) shows what each one prints (made-up data), for example the price comparison:
+
+```console
+$ python examples/01_compare_markets.py DZ5485-612
+DZ5485-612  (StockX quotes as of 2026-11-10T14:32:07Z)
+  size |   SX ask   SX bid | GOAT ask | cheapest
+     9 |      281      240 |      272 | GOAT (-9)
+   9.5 |      276      238 |      280 | StockX (-4)
+    10 |      268      231 |      275 | StockX (-7)
+  10.5 |      271      229 |      262 | GOAT (-9)
+```
+
+The snippets below show individual calls.
+
 ### Retail inventory
 
 ```python

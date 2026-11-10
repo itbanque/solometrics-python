@@ -60,4 +60,4 @@ ignore = ["UP006", "UP007", "UP035", "UP045", "UP028", "PYI034"]
 
 [tool.mypy]
 strict = false
-files = ["src/solometrics"]
+files = ["src/solometrics", "examples"]
