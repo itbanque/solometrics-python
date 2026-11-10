@@ -20,8 +20,8 @@ jobs:
       - run: uv sync --locked
       - name: Ruff
         run: |
-          uv run ruff check src tests scripts
-          uv run ruff format --check src tests scripts
+          uv run ruff check src tests scripts examples
+          uv run ruff format --check src tests scripts examples
       - name: Mypy
         run: uv run mypy
       - name: Async resources are up to date
