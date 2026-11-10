@@ -1,5 +1,7 @@
 # solometrics — SneakersRadar API Python SDK
 
+**English** | [简体中文](https://github.com/itbanque/solometrics-python/blob/main/README.zh-CN.md)
+
 [![CI](https://github.com/itbanque/solometrics-python/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/itbanque/solometrics-python/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/solometrics)](https://pypi.org/project/solometrics/)
 [![GitHub release](https://img.shields.io/github/v/release/itbanque/solometrics-python)](https://github.com/itbanque/solometrics-python/releases)

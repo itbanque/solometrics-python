@@ -1,5 +1,7 @@
 # Examples
 
+**English** | [简体中文](README.zh-CN.md)
+
 Runnable scripts that use the SDK for everyday reseller tasks. Each one is a single file with `--help`.
 
 ```bash
